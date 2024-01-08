@@ -1,3 +1,3 @@
 # Yuru-camp
-  Primeira versão 
+  Primeira versão -
 Página sobre o anime laid-back camp(em japonês yuru camp)
