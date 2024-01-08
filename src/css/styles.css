@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+:root {
+    --cor1: rgb(59, 78, 116);
+    --cor2: #806b70;
+    --cor3: rgb(22, 25, 39);
+    --cor4: rgb(32, 32, 38);
+    --cor5: #94b2c0;
+    --font1: 'Roboto', sans-serif;
+
+}
+
+body {
+    background-color: var(--cor4);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(126deg, #000 16%, rgba(0, 0, 0, 0) 147%) no-repeat;
+    z-index: -1;
+}
+
+body::before {
+    content: "";
+    background-image: url(../imagens/bg-yurucamp.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+}
+
+.cabecalho .link {
+    margin: 10px;
+    margin-right: 17px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 18px;
+}
+
+.cabecalho .link:hover {
+    background-color: var(--cor1);
+    transition: 0.2s;
+}
+
+.img-menu:hover {
+    background-color: var(--cor1);
+    transition: 0.2s;
+}
+
+header>img {
+    width: 45px;
+    height: 39px;
+}
+
+.conteudo {
+    height: 91vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    font-family: var(--font1);
+    color: #fff;
+
+}
+
+.conteudo h1 {
+    margin-bottom: 15px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--font1);
+    color: #fff;
+}
+
+div.informacoes h1 {
+    color: #fff;
+    margin: 25px;
+   
+}
+
+.imagens {
+    display: flex;
+    gap: 35px;
+    padding: 25px;
+    text-align: center;
+}
+
+.imagens a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.quote {
+    display: flex;
+    width: 100vw;
+    padding: 15px;
+    justify-content: center;
+    gap: 18px;
+   
+}
+
+.quote>p {
+    height: 80px;
+    width: 250px;
+    display: flex;
+    border: 1px solid black;
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 2px 2px 9px 0px #000000d6;
+    font-family: 'Roboto';
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    background-size: cover;
+}
+
+footer{
+    height: 30px;
+    width: 99vw;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 8px;
+    font-family: var(--font1);
+}
